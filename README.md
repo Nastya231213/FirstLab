@@ -8,12 +8,16 @@ Java,
 CSS (for styling),
 MySQL (for database)
 # Some screenshots
-![image](https://github.com/Nastya231213/FirstLab/assets/122891769/971569bd-f97b-4a2b-a070-71ff59b04dbd)
-![image](https://github.com/Nastya231213/FirstLab/assets/122891769/43df1582-bc29-4ea3-99ad-812ef2e07f49)
-![image](https://github.com/Nastya231213/FirstLab/assets/122891769/504ec44e-ef97-43c6-944a-6bfa25334d7d)
-![image](https://github.com/Nastya231213/FirstLab/assets/122891769/4c88c702-3b08-4222-b74b-2e72d0679033)
+![image](https://github.com/Nastya231213/FirstLab/assets/122891769/9087841a-b4d4-4ca2-a10e-a13ee5a022f7)
+![image](https://github.com/Nastya231213/FirstLab/assets/122891769/74cfe0c3-3a1f-4a39-87b3-4144c8bc702d)
+![image](https://github.com/Nastya231213/FirstLab/assets/122891769/01e8c9e0-3c90-4033-943c-daa923e1e1f9)
+![image](https://github.com/Nastya231213/FirstLab/assets/122891769/82393770-9d9c-47f9-a4c8-70385d6fc41d)
+![image](https://github.com/Nastya231213/FirstLab/assets/122891769/3a5f3329-bc1a-47a5-8ca8-32abd0bfbd23)
+![image](https://github.com/Nastya231213/FirstLab/assets/122891769/e316c8c2-7d0c-496d-a01c-496842c6ac6c)
+![image](https://github.com/Nastya231213/FirstLab/assets/122891769/1d7ef1d0-41df-4368-81f7-5bb27efa284f)
 
-#Features
+
+# Features
 Додавання книг до бібліотеки.
-Пошук книг за назвою, автором,ID, пошук авторів за псевдонімом, повним ім'ям.
+Пошук книг за назвою, автором,ID. Пошук авторів за псевдонімом, повним ім'ям,ID.
 Редагування/видалення та додавання книг, серій книг, авторів,  додавання персонажів до деякої кількості книг, додавання книг до серії. 
