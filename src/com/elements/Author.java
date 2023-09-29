@@ -5,7 +5,6 @@ public class Author {
     private int id;
     private String name;
     private String pseudonym;
-    private List<Book> listOfBook;
 	public int getId() {
 		return id;
 	}
@@ -24,11 +23,4 @@ public class Author {
 	public void setPseudonym(String pseudonym) {
 		this.pseudonym = pseudonym;
 	}
-	public List<Book> getListOfBook() {
-		return listOfBook;
-	}
-	public void setListOfBook(List<Book> listOfBook) {
-		this.listOfBook = listOfBook;
-	}
-    
 }
