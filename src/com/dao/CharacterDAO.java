@@ -60,7 +60,6 @@ public class CharacterDAO implements DatabaseDAO<Character> {
 	    	Connect.closeConnection(connection);
 	    }
 
-	    System.out.println(listCharacters.size());
 	    return listCharacters;
 	}
 
