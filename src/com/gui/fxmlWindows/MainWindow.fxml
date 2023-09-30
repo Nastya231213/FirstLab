@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="1017.0" styleClass="gray-background-with-gradient" stylesheets="@../style/application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.controllers.MainViewController">
+   <children>
+      <AnchorPane prefHeight="531.0" prefWidth="200.0" styleClass="background" stylesheets="@../style/application.css">
+         <children>
+            <Button fx:id="addBook" alignment="BASELINE_LEFT" layoutX="-5.0" layoutY="30.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#LoadAddBookApp" prefHeight="48.0" prefWidth="222.0" styleClass="button1" stylesheets="@../style/application.css" text="Add  book" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@../../../../../../Downloads/icons8-book-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="addAuthor" alignment="BASELINE_LEFT" layoutX="-2.0" layoutY="68.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#LoadAddAuthorApp" prefHeight="48.0" prefWidth="222.0" styleClass="button1" stylesheets="@../style/application.css" text="Add  author" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@../../../../../../Downloads/icons8-author-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="addSeries" alignment="BASELINE_LEFT" layoutY="113.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#LoadAddSeriesApp" prefHeight="48.0" prefWidth="222.0" styleClass="button1" stylesheets="@../style/application.css" text="Add  series" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../../../../../../Downloads/icons8-series-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="160.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#LoadAddCharacterApp" prefHeight="48.0" prefWidth="222.0" styleClass="button1" stylesheets="@../style/application.css" text="Add character" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="26.0">
+                     <image>
+                        <Image url="@../../../../../../Downloads/icons8-character-50%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="202.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#LoadCharacterToTheBookApp" prefHeight="48.0" prefWidth="227.0" styleClass="button1" stylesheets="@../style/application.css" text="Character to the book" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../../../../../../Downloads/icons8-plus-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="242.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#LoadBookToTheSeriesApp" prefHeight="48.0" prefWidth="234.0" styleClass="button1" stylesheets="@../style/application.css" text="Book to the series" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../../../../../../Downloads/icons8-plus-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnClose" layoutX="964.0" layoutY="2.0" mnemonicParsing="false" onAction="#exitFromTheApp" prefHeight="22.0" prefWidth="50.0" styleClass="button_close" stylesheets="@../style/application.css" text="X" textFill="#1b1b1b">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMinimize" layoutX="920.0" layoutY="3.0" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="22.0" prefWidth="44.0" styleClass="button_minimize" stylesheets="@../style/application.css" text="—">
+         <font>
+            <Font name="FontAwesome" size="12.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="228.0" layoutY="81.0" prefHeight="33.0" prefWidth="313.0" />
+      <Label layoutX="328.0" layoutY="51.0" prefHeight="60.0" prefWidth="592.0" text="Author and Book Catalog">
+         <font>
+            <Font name="Arial Bold" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10835161060094833" green="0.06834795325994492" blue="0.8684210777282715" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.21912768483161926" green="0.08698830753564835" blue="0.44736841320991516" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TabPane layoutX="245.0" layoutY="159.0" prefHeight="360.0" prefWidth="741.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Books">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="319.0" prefWidth="741.0">
+                     <children>
+                        <TableView fx:id="tableViewOfBooks" layoutX="-1.0" layoutY="85.0" prefHeight="213.0" prefWidth="744.0" stylesheets="@../style/application.css">
+                          <columns>
+                            <TableColumn fx:id="idCol" prefWidth="30.666702270507812" text="ID" />
+                            <TableColumn fx:id="titleCol" prefWidth="83.0" text="Title" />
+                              <TableColumn fx:id="nameCol" prefWidth="72.0" text="Name" />
+                              <TableColumn fx:id="releaseDateCol" prefWidth="124.0" text="Release date" />
+                              <TableColumn fx:id="quantityCol" prefWidth="158.0" text="Quantity of pages" />
+                              <TableColumn fx:id="annotationCol" prefWidth="136.0" text="Short annotation" />
+                              <TableColumn fx:id="actionCol" minWidth="0.0" prefWidth="134.66668701171875" text="Action" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="searchTextField" layoutX="427.0" layoutY="22.0" prefHeight="33.0" prefWidth="278.0" promptText="Search" stylesheets="@../style/application.css">
+                           <styleClass>
+                              <String fx:value="search_input" />
+                              <String fx:value="table-view-with-shadow" />
+                           </styleClass>
+                        </TextField>
+                        <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="388.0" layoutY="22.0">
+                           <image>
+                              <Image url="@../../../../../../Downloads/icons8-search-48.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Authors">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableViewAuthors" layoutY="48.0" prefHeight="215.0" prefWidth="741.0" stylesheets="@../style/application.css">
+                           <columns>
+                              <TableColumn fx:id="idAuthorCol" prefWidth="93.0" text="ID" />
+                              <TableColumn fx:id="authorFullnameCol" prefWidth="211.99993896484375" text="Full name" />
+                              <TableColumn fx:id="pseudonymCol" minWidth="0.0" prefWidth="195.33331298828125" text="Pseudonym" />
+                              <TableColumn fx:id="actionCol_" minWidth="0.0" prefWidth="218.666748046875" text="Action" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Series">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="324.0" prefWidth="748.0">
+                     <children>
+                        <TableView fx:id="tableViewSeries" layoutX="15.0" layoutY="48.0" prefHeight="215.0" prefWidth="741.0">
+                          <columns>
+                            <TableColumn fx:id="idSeriesCol" prefWidth="48.666656494140625" text="ID" />
+                            <TableColumn fx:id="seriesNameCol" prefWidth="84.66668701171875" text="Name" />
+                              <TableColumn fx:id="dateOfStartCol" prefWidth="159.33331298828125" text="Date of the start" />
+                              <TableColumn fx:id="descriptionCol" prefWidth="126.66668701171875" text="Description" />
+                              <TableColumn fx:id="typeCol" prefWidth="157.0" text="Type" />
+                              <TableColumn fx:id="actionSeriesCol" prefWidth="132.0" text="Action" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Characters">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="324.0" prefWidth="748.0">
+                     <children>
+                        <TableView fx:id="tableViewCharacter" layoutX="66.0" layoutY="67.0" prefHeight="215.0" prefWidth="360.0">
+                           <columns>
+                              <TableColumn fx:id="idCharacterId" prefWidth="48.666656494140625" text="ID" />
+                              <TableColumn fx:id="nameCharacterCol" prefWidth="84.66668701171875" text="Name" />
+                              <TableColumn fx:id="descriptionCharacterCol" prefWidth="129.0" text="Description" />
+                              <TableColumn fx:id="roleCharacterCol" prefWidth="95.33331298828125" text="Role" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="bookIdTextField" layoutX="444.0" layoutY="50.0" prefHeight="33.0" prefWidth="204.0" promptText="Enter ID of the book" stylesheets="@../style/application.css">
+                           <styleClass>
+                              <String fx:value="search_input" />
+                              <String fx:value="table-view-with-shadow" />
+                           </styleClass>
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="655.0" layoutY="50.0" mnemonicParsing="false" onAction="#showCharactersOfThebook" prefHeight="33.0" prefWidth="72.0" styleClass="button_submit" text="Submit" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="37.0" layoutY="6.0" prefHeight="33.0" prefWidth="445.0" text="Characters of the book with the entered ID">
+                           <font>
+                              <Font name="Arial Bold" size="21.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.10835161060094833" green="0.06834795325994492" blue="0.8684210777282715" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.2550335570469799">
+                                       <color>
+                                          <Color red="0.10835161060094833" green="0.06834795325994492" blue="0.8684210777282715" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.08528265357017517" green="0.13673651218414307" blue="0.5263158082962036" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

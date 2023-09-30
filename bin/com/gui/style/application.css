@@ -1,0 +1,277 @@
+
+
+.background {
+    -fx-background-color: linear-gradient(to left, #210e80,#2a07db);
+}
+
+.button1
+{
+	
+-fx-background-color: transparent;}
+
+.button1:hover
+{
+-fx-background-color : #524A7B ;
+-fx-background-radius :  30.0 0.0 0.0 30.0;
+}
+.button_back{
+	-fx-background-color : transparent ;
+	
+}
+.tab {
+    -fx-background-color: rgba(255,255,255,0.5); 
+    -fx-text-fill: white; 
+    -fx-font-size: 20px; 
+    -fx-padding: 10px 20px; 
+    -fx-background-radius: 5px; 
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill:  linear-gradient(to bottom,#0040ff, #3043d9);
+    -fx-font-size: 30x;
+        -fx-font-family: "Arial";
+        -fx-font-weight: bold; 
+    
+}
+
+.search_input{
+	    -fx-background-color:#FFFFFF;
+-fx-background-radius:15;	
+}
+.tab-pane .tab:selected .tab-label{
+	-fx-underline:true;
+		    -fx-text-fill:  linear-gradient(to bottom,#143db8, #1517cb );
+	
+}
+.root {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.combo-box
+{
+    -fx-background-color : #141124;
+    -fx-border-color:  #515658;
+    -fx-border-radius: 30.0;
+}
+.combo-box:hover
+{
+    -fx-background-color : #141124;
+    -fx-border-color:  #FFFF;
+    -fx-border-radius: 30.0;
+}
+.combo-box:pressed
+{
+    -fx-background-color : #141124;
+    -fx-border-color:  #FFFF;
+    -fx-border-radius: 30.0;
+}
+.table-view-with-shadow {
+    -fx-effect: dropShadow(three-pass-box,rgba(0.0,0.0,0.0,0.2), 10.0 , 0.0 , 0.0 ,10.0);
+}
+.table-view .column-header,
+.table-view .column-header-background .filler {
+	   -fx-font-size: 16.0px; 
+	
+    -fx-cell-size : 20.0;
+    -fx-background-color: linear-gradient(to bottom, #210e80, #2e15ad);
+    
+}
+.table-view .column-header .label{
+    -fx-font-family: "Arial";
+
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+.table-view .cell{
+   -fx-cell-size: 30.0;
+  -fx-alignment: center-left;
+  -fx-text-fill: #000000;
+   -fx-font-size: 15.0px; 
+       -fx-font-family: "Arial";
+   
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  rgb(127.0, 172.0, 243.0);
+ }
+ .table-row-cell:selected .text {
+        -fx-fill : white ;
+
+ }
+ .gray-background-with-gradient {
+    -fx-background-color: #EEEEEE;
+}
+
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2.0em;
+
+}
+
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive(  #2D75E8,80.0%);
+	-fx-background-radius: 2.0em;
+	-fx-border-radius:2.0em;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #2D75E8,90.0%);
+	-fx-background-insets: 2.0, 0.0, 0.0;
+	-fx-background-radius: 2.0em;
+
+}
+
+
+.chart {
+    -fx-padding: 10.0px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+}
+.chart-plot-background {
+    -fx-background-color:transparent;
+}
+
+.chart-pie {
+    -fx-border-color: derive(-fx-pie-color, 1.0%);
+    -fx-border-width: 0.0px;
+}
+
+.linear-grad
+{
+    -fx-background-color: linear-gradient(to bottom left, #A868A0, #2D75E8);
+}
+.text-field{
+    -fx-background-color:#FFFFFF;
+}
+.date-picker{
+-fx-background-color: linear-gradient(to bottom left, rgba(10.0, 26.0, 161.0, 0.9), rgba(2, 117.0, 232.0, 0.9)); -fx-text-fill: darkblue; -fx-font-size: 16.0px;
+-fx-font-family: Arial; -fx-font-size: 14.0px;
+}
+.choice-box{
+	-fx-background-color: white;	
+
+
+}
+.button2{
+	-fx-background-color: linear-gradient(to bottom left, rgba(10.0, 26.0, 161.0, 0.9), rgba(2, 117.0, 232.0, 0.9));
+	    -fx-background-radius: 30.0px;
+	    -fx-border-color:white;
+	    	    -fx-border-radius: 30.0px;
+	    	    -fx-border-width:2.0px;
+	    
+	
+}
+.button2:hover{
+	-fx-background-color: linear-gradient(to bottom left, rgba(10, 26, 161, 0.7), rgba(2, 117, 232, 0.7));
+	
+}
+.button_delete{
+	    -fx-text-fill: white;
+		-fx-font-family: "Arial";
+	    -fx-background-color: linear-gradient(to left, #C70039, #FF3333);
+}
+.button_delete:hover{
+	-fx-background-color: linear-gradient(to left, #8B0000, #990000);
+	
+}
+.button_edit{
+	 -fx-font-family: "Arial";
+	
+    -fx-background-color: linear-gradient(to left, #210e80,#2a07db);
+    -fx-text-fill: white;
+}
+.button_submit{
+	    -fx-background-color: linear-gradient(to left, #210e80,#2a07db);
+		    -fx-background-radius: 35.0px;
+	
+}
+.button_submit:hover{
+	    -fx-background-color: linear-gradient(to left, #3b4fff,#2a07db);
+
+}
+.button_edit:hover{
+	-fx-background-color: linear-gradient(to left, #0a0465, #1400b2);
+	
+}
+.button_close{
+-fx-background-color: rgba(216.0, 217.0, 218.0, 0.85);
+	 -fx-background-radius: 5.0px;
+}
+.button_close:hover{
+-fx-background-color: rgba(229.0,0.0, 0.0, 0.6);
+-fx-text-fill:white;
+}
+.button_minimize{
+-fx-background-color: rgba(216.0, 217.0, 218.0, 0.85);
+-fx-background-radius: 5.0px;
+		 
+	
+}
+.button_minimize:hover{
+	-fx-background-color: rgba(192.0, 192.0, 192.0, 0.6);
+}
+.button1:hover{
+	-fx-background-color: linear-gradient(to bottom left, rgba(3.0, 7.0, 255.0, 0.5), rgba(45.0, 117.0, 232.0, 0.4));
+}
+.date-picker .arrow-button {
+	-fx-background-color:linear-gradient(to bottom left, rgba(10.0, 26.0, 161.0, 0.9), rgba(2, 117.0, 232.0, 0.9));
+	-fx-background-radius: 0.0;
+}
+.date-picker .arrow-button:hover {
+	-fx-background-color:linear-gradient(to bottom left, rgba(10.0, 26.0, 161.0, 0.9), rgba(2, 117.0, 232.0, 0.9));
+}
+.date-picker .arrow-button .arrow {
+	-fx-background-color: white;
+}
+.date-picker .cell {
+	-fx-background-color: white;
+}
+.date-picker .cell:hover {
+	-fx-background-color: -fx-light-grey-color;
+}
+.date-picker .cell:focused {
+	-fx-background-color: -fx-light-grey-color;
+}
+.date-picker .selected {
+	-fx-background-color: linear-gradient(to bottom left, rgba(10.0, 26.0, 161.0, 0.9), rgba(2, 117.0, 232.0, 0.9));
+	-fx-text-fill: white;
+}
+.date-picker .selected:focused {
+	-fx-background-color:linear-gradient(to bottom left, rgba(10.0, 26.0, 161.0, 0.9), rgba(2, 117.0, 232.0, 0.9));
+	-fx-text-fill: white;
+}
+.date-picker-popup  {
+	-fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+	-fx-background-color: linear-gradient(to bottom left, rgba(10.0, 26.0, 161.0, 0.9), rgba(2, 117.0, 232.0, 0.9));
+}
+.date-picker-popup .month-year-pane .label {
+	-fx-text-fill: white;
+}
+.date-picker-popup .week-number-cell {
+	-fx-text-fill: linear-gradient(to bottom left, rgba(10.0, 26.0, 161.0, 0.9), rgba(2, 117.0, 232.0, 0.9));
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+	-fx-background-color: white;
+}
+.choice-box:focused,
+.text-field:focused,
+.text-area:focused{
+ -fx-focus-color:transparent;    -fx-faint-focus-color: transparent; 
+}
+.ROOTNODE {
+-fx-background-radius: 30.0;
+-fx-border-radius: 30.0;
+-fx-border-width:5.0;
+-fx-border-color:white;
+}
