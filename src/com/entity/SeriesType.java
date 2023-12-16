@@ -1,25 +1,63 @@
 package com.entity;
 
-public enum SeriesType {
+public interface Series {
+    String getSeriesTypeName();
+    void displayInfo();
+}
 
-	CANONICAL("Canonical"),MOVIE_BASED("Movie-based"),UNOFFICIAL("Unofficial");
-	
-	private final String seriesTypeName;
-	private SeriesType(String seriesTypeName) {
-		this.seriesTypeName=seriesTypeName;
-	}
-	public String getSeriesTypeName() {
-		return seriesTypeName;
-	}
-	
-	public static SeriesType getSeriesTypeFromString(String typeName) {
-		for(SeriesType type:SeriesType.values()){
-			if(type.getSeriesTypeName().equals(typeName)) {
-				return type;
-			}
-		}
-		return null;
-	}
-	
+public class CanonicalSeries implements Series {
+    private final String seriesTypeName;
 
+    public CanonicalSeries() {
+        this.seriesTypeName = "Canonical";
+    }
+
+    @Override
+    public String getSeriesTypeName() {
+        return seriesTypeName;
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Series Type: " + getClass().getSimpleName());
+        System.out.println("String Representation: " + getSeriesTypeName());
+    }
+}
+
+public class MovieBasedSeries implements Series {
+    private final String seriesTypeName;
+
+    public MovieBasedSeries() {
+        this.seriesTypeName = "Movie-based";
+    }
+
+    @Override
+    public String getSeriesTypeName() {
+        return seriesTypeName;
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Series Type: " + getClass().getSimpleName());
+        System.out.println("String Representation: " + getSeriesTypeName());
+    }
+}
+
+public class UnofficialSeries implements Series {
+    private final String seriesTypeName;
+
+    public UnofficialSeries() {
+        this.seriesTypeName = "Unofficial";
+    }
+
+    @Override
+    public String getSeriesTypeName() {
+        return seriesTypeName;
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Series Type: " + getClass().getSimpleName());
+        System.out.println("String Representation: " + getSeriesTypeName());
+    }
 }
