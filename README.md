@@ -9,7 +9,7 @@ Fields:154( кожен клас, який діє як контролер JavaFX,
 
 Всього класів: 29.
 
-Classes: (Author(6 functions(all trival),3 fields),Book(16 functions(all trival),6 fields),MovieBasedSeries(3 functions(trival),1 field),UnofficialSeries(1 field,3 functions),Character(11 functions(all trival),4 fields), AuthorDAO (5 functions,4 fields),BookDAO(7 functions , 4 fields),CharacterDAO(7 functions ,4 fields), SeriesDAO(6 functions, 4 fields), Connect(2 functions , 2 fields), ще 9 класів,що є підкласами класу Application в JavaFX, вони використовується для створення графічного користувацького інтерфейсу),10 класів -  є контролерами JavaFX, який управляє взаємодією з віджетами та подіями (events) для вікон(53 functions(25 тривіальних)).
+Classes: (Author(6 functions(all trival),3 fields),Book(16 functions(all trival),6 fields),MovieBasedSeries(3 functions(trival),1 field),UnofficialSeries(1 field,3 functions),Character(11 functions(all trival),4 fields), AuthorDAO (5 functions,4 fields),BookDAO(7 functions , 4 fields),CharacterDAO(7 functions ,4 fields), SeriesDAO(6 functions, 4 fields),DataModel(6 functions(all trival), 4 fields), Connect(2 functions , 2 fields), ще 9 класів,що є підкласами класу Application в JavaFX, вони використовується для створення графічного користувацького інтерфейсу),10 класів -  є контролерами JavaFX, який управляє взаємодією з віджетами та подіями (events) для вікон(53 functions(25 тривіальних)).
 
 Кожен з класів CanonicalSeries, MovieBasedSeries та UnofficialSeries реалізує інтерфейс Series.
 
